@@ -1,19 +1,5 @@
-interface InputProps {
-  type: string;
-  id?: string;
-  value?: any;
-  handleInput: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  icon?: React.ReactNode;
-  placeHolder?: string;
-  header: string;
-  name?: string;
-  iconTwo?: React.ReactNode;
-  iconThree?: React.ReactNode;
-  width?: string;
-  height?: string;
-  pl?: string | 3;
-  borders: string | "1px solid gray";
-}
+import { InputProps } from "../../type";
+
 export const Input: React.FC<InputProps> = (props) => {
   return (
     <div className="font-sans font-[400] text-[0.88rem] my-[1%] ">

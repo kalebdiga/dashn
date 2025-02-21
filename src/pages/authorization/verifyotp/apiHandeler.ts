@@ -20,7 +20,6 @@ export const useVerifyOtpHandler = () => {
         state: { accesstoken: response.accesstoken },
       });
     } catch (error: any) {
-      console.error("Error:", error);
       const errorMessage = error?.data?.message || "Something went wrong";
       triggerToast(showToast, errorMessage);
     }

@@ -27,7 +27,6 @@ export const useRequestOtp = () => {
       setTimer(120);
       setIsTimerExpired(false);
     } catch (error) {
-      console.error("Error:", error);
       const errorMessage =
         (error as ApiError)?.data?.message || "Something went wrong";
       triggerToast(showToast, errorMessage);

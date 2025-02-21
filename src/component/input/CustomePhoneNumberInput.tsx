@@ -1,21 +1,6 @@
 import React from "react";
 import Flag from "./../../assets/Flag_of_Ethiopia.svg";
-interface CustomPhoneNumberInputProps {
-  type: string;
-  id?: string;
-  name: string;
-  value?: any;
-  handleInput: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  countryCode?: string;
-  flag?: React.ReactNode;
-  placeholder?: string;
-  maxLength?: number;
-  error?: string;
-  errorMessage?: string;
-  label: string;
-  width?: string;
-  height?: string;
-}
+import { CustomPhoneNumberInputProps } from "../../type";
 
 export const CustomPhoneNumberInput: React.FC<CustomPhoneNumberInputProps> = ({
   type = "phone",
